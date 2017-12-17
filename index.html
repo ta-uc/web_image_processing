@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Canvas image processing</title>
+    <style type="text/css">
+    body {
+      margin: 0;
+      -webkit-touch-callout:none;
+      -webkit-user-select:none;
+    }
+  </style>
+  </head>
+  <body>
+    <h1>Canvas image</h1>
+    <div align = "center">
+    <button style="WIDTH: 5vw; HEIGHT: 4vh" onclick="startVideo({video: true, audio: false})">Start</button>
+    <button style="WIDTH: 5vw; HEIGHT: 4vh" onclick="stopVideo()">Stop</button>
+    <button style="WIDTH: 5vw; HEIGHT: 4vh" onclick="flipCamera()">Flip</button>
+
+    <p　hidden="hidden">
+      <video id="local_video" autoplay playsinline width="0.1" height="0.1"></video>
+    </p>
+      <canvas id="canvas">Unsupported Browser</canvas>
+    </div>
+  </body>
+
+  <script src="./ip.js" charset="utf-8"></script>
+  <script src="./prc.js" charset="utf-8"></script>
+</html>
